@@ -16,19 +16,3 @@ python:
   install:
     - method: pip
       path: .
-      extra_requirements:  
-        - docs  # Install your docs dependencies from requirements.txt
-
-# Sphinx configuration
-sphinx:
-  configuration: docs/source/conf.py
-
-# Optionally, build in multiple formats
-formats: all
-
-# Requirements file path
-requirements_file: requirements.txt
-
-# Configure conda environment (if using conda)
-# conda:
-#   environment: docs/environment.yml
