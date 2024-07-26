@@ -2,17 +2,16 @@
 
 # Read the Docs configuration file
 # See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+version: 2 
 
-version: 2  # Use version 2 of the config file format
-
-# Build configuration
 build:
-  os: ubuntu-22.04  # Use a recent Ubuntu image
+  os: ubuntu-22.04
   tools:
-    python: "3.10"  # Specify the Python version for the build environment
+    python: "3.10"
 
-# Python configuration
 python:
   install:
     - method: pip
       path: .
+      extra_requirements:
+        - docs  # Install docs dependencies (if you have any)
