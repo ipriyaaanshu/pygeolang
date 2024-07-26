@@ -19,12 +19,8 @@ python:
       extra_requirements:  
         - docs  # Install your docs dependencies from requirements.txt
 
-# Sphinx configuration
-sphinx:
-  configuration: docs/source/conf.py
-
 # Optionally, build in multiple formats
 formats: all
 
 # Requirements file path
-requirements_file: docs/requirements.txt
+requirements_file: requirements.txt
