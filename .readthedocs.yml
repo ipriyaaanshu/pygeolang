@@ -15,3 +15,11 @@ python:
       path: .
       extra_requirements:
         - docs  # Install docs dependencies (if you have any)
+
+sphinx:
+  configuration: source/conf.py
+
+formats: all
+
+# Requirements file path (corrected)
+requirements_file: requirements.txt

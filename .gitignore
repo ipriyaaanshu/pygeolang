@@ -1,3 +1,4 @@
 dist/*
 pygeolang.egg-info/*
 __pycache__/*
+.venv/
