@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Usage &#8212; PyGeoLang 0.3.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=4621528c"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Features" href="features.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h1>
+<p>Here are some examples of how to use PyGeoLang:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygeolang</span>
+
+<span class="c1"># Get country code</span>
+<span class="n">code</span> <span class="o">=</span> <span class="n">pygeolang</span><span class="o">.</span><span class="n">get_country_code</span><span class="p">(</span><span class="s2">&quot;Germany&quot;</span><span class="p">,</span> <span class="s2">&quot;alpha_3&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">code</span><span class="p">)</span>  <span class="c1"># Output: DEU</span>
+
+<span class="c1"># Get country by code</span>
+<span class="n">country</span> <span class="o">=</span> <span class="n">pygeolang</span><span class="o">.</span><span class="n">get_country_by_code</span><span class="p">(</span><span class="s2">&quot;276&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">country</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>  <span class="c1"># Output: Germany</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">country</span><span class="o">.</span><span class="n">official_name</span><span class="p">)</span>  <span class="c1"># Output: Federal Republic of Germany</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">country</span><span class="o">.</span><span class="n">languages</span><span class="p">)</span>    <span class="c1"># Output: [&#39;German&#39;]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">country</span><span class="o">.</span><span class="n">continent</span><span class="p">)</span>    <span class="c1"># Output: Europe</span>
+
+<span class="c1"># Get countries by continent</span>
+<span class="n">countries</span> <span class="o">=</span> <span class="n">pygeolang</span><span class="o">.</span><span class="n">get_countries_by_continent</span><span class="p">(</span><span class="s2">&quot;Asia&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">countries</span><span class="p">)</span> <span class="c1"># [&#39;Afghanistan&#39;, &#39;Armenia&#39;, ... ]</span>
+
+<span class="c1"># Get languages by country</span>
+<span class="n">languages</span> <span class="o">=</span> <span class="n">pygeolang</span><span class="o">.</span><span class="n">get_languages_by_country</span><span class="p">(</span><span class="s2">&quot;India&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">languages</span><span class="p">)</span> <span class="c1"># [&#39;Hindi&#39;, &#39;English&#39;, ...]</span>
+</pre></div>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">PyGeoLang</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="installation.html" title="previous chapter">Installation</a></li>
+      <li>Next: <a href="features.html" title="next chapter">Features</a></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, Priyanshu Sharma.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.4.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/usage.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
